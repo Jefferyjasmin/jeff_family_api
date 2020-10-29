@@ -53,8 +53,8 @@ def post_member():
 
 @app.route('/members/<int:member_id>', methods=['DELETE'])
 def delete_member(member_id):
-    member =jackson_family.delete_member(member_id)
-    members =jackson_family.get_all_members()
+    member = jackson_family.delete_member(member_id)
+    members = jackson_family.get_all_members()
     return jsonify(members), 200
 
         

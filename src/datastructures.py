@@ -36,10 +36,10 @@ class FamilyStructure:
     def delete_member(self, id):
         for person in range(len(self._members)):
             print("hello",person)
-            print("hey", self._members)
-            if self._members[person]["id"] == id:
+            if self._members[person]['id'] == id:
                 self._members.pop(person)
-        return None
+                print("hey", self._members)
+                return None
 
 
         # fill this method and update the return
